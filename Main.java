@@ -13,7 +13,11 @@ public class Main {
         obj2.storage = 256;
         obj2.screen = 12;
         obj2.model = "gyat";
-        obj2.condition = "new"
+        obj2.condition ="new";
         obj2.price = 67000;
+
+        obj1.printDetails();
+        obj2.printDetails();
+       
     }
 }
