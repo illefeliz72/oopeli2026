@@ -17,8 +17,4 @@ public class Main {
         book1.printBookInfo();
         book2.printBookInfo();
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 51e840dcc07a444c2d05225c898e9be034333599

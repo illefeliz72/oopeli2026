@@ -1,28 +1,19 @@
 package activity1;
 
 public class Book {
+    public String title;
+    public String author;
+    public String isbn;
+    public String publicationDate;
 
-    String title;
-    String author;
-    String isbn;
-    String publicationDate;
-
-    // parameterized
-
-    public Book(String title, String author, String isbn, String publicationDate) {
-        this.title = title;
-        this.author = author;
-        this.isbn = isbn;
-        this.publicationDate = publicationDate;
+    public Book() {
     }
 
-    void printBookInfo() {
-
+    public void printBookInfo() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("ISBN: " + isbn);
-        System.out.println("Publication Date: " + publicationDate);
-        System.out.println();
+        System.out.println("Published: " + publicationDate);
+      
     }
-
 }

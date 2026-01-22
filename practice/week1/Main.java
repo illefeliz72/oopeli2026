@@ -1,3 +1,5 @@
+package practice.week1;
+
 public class Main {
     public static void main(String[] args) {
         Laptop obj1 = new Laptop();

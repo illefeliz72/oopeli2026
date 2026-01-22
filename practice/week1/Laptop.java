@@ -1,3 +1,5 @@
+package practice.week1;
+
 public class Laptop{
     String brand;
     double storage;
