@@ -19,6 +19,8 @@ public class Student {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
 
     }
 
