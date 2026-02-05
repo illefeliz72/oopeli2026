@@ -16,11 +16,10 @@ public class SecretAgent {
         this.agentId = agentId;
         this.codename = codename;
         this.clearanceLevel = clearanceLevel;
-
-        boolean onMission = false;
-        lastMissionCompletionTime = null;
+        this.onMission = false;
+        this.lastMissionCompletionTime = null;
     }
-
+//getter
     public String getAgentId() {
         return agentId;
     }
@@ -29,7 +28,7 @@ public class SecretAgent {
         return codename;
     }
 
-    public int getClearanceLevel(int level) {
+    public int getClearanceLevel() {
 
         return clearanceLevel;
     }
@@ -42,17 +41,27 @@ public class SecretAgent {
         return lastMissionCompletionTime;
     }
 
-    // setter
+    // setter methods
     public void setCodename(String newCodename) {
         this.codename = newCodename;
     }
 
     public void setClearance(int level) {
-        try {
-            
-        } catch (Exception e) {
-            System.out.println("Invalid clearance level.");
+        if (level >= 1 && level <= 5) {
+            this.clearanceLevel = level;
+        } else {
+            System.out.println("Invalid clearance level" + level);
         }
     }
 
+    // behavioral methods
+    public void startMission() {
+        this.onMission = true;
+    }
+
+    public void completeMission() {
+        this.onMission = false;
+        this.lastMissionCompletionTime = LocalDateTime.now();
+        
+    }
 }
