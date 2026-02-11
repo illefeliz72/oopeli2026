@@ -1,4 +1,4 @@
-package activity4;
+
 
 public class BankAccount{
     private String acctNo;

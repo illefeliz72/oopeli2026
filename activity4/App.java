@@ -1,11 +1,3 @@
-package activity4;
-
-/*
-Activity 4 Task
-
-Make Deposit, Withdraw and Exit functional.
-Make proper adjustment to BankAccount.java if necessary.
-*/
 
 import java.io.File;
 import java.io.FileNotFoundException;
