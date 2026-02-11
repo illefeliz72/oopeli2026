@@ -17,7 +17,9 @@ public class MissionControl {
 
         if (agent.getClearanceLevel() >= mission.getDifficulty()) {
             System.out.println("Agent " + agent.getAgentId() + " is cleared for mission.");
+
             agent.startMission();
+            
             System.out.println("Updated Status: On Mission = " + agent.isOnMission());
 
             System.out.println("... Operation in progress ...");
