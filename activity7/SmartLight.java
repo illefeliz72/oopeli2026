@@ -7,10 +7,9 @@ public class SmartLight extends SmartDevice {
         super(deviceName);
         this.brightness = 0;
     }
-
     @Override
     public void displayStatus() {
-        super.displayStatus();
+        super.displayStatus(brightness);
         System.out.println("Brightness: " + brightness + "%");
     }
     public void setBrightness(int level){

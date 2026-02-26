@@ -13,8 +13,7 @@ public class SmartDevice {
         this.isOn = true;
     }
 
-    public void displayStatus() {
-        String status;
+    public void displayStatus(String status) {
         if (isOn) {
             status = "ON";
         } else {
@@ -24,10 +23,5 @@ public class SmartDevice {
                 DEVICE NAME: %s
                 STATUS: %s
                 """, deviceName, status);
-    }
-
-    public void displayStatus(double temp) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'displayStatus'");
     }
 }

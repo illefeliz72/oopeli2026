@@ -9,7 +9,7 @@ public class SmartThermostat extends SmartDevice {
     }
 
     @Override
-    public void displayStatus(double temp) {
+    public void displayStatus() {
         super.displayStatus();
         System.out.println("Temperature: " + temperature + "°C");
     }
