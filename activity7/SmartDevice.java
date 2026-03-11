@@ -24,4 +24,9 @@ public class SmartDevice {
                 STATUS: %s
                 """, deviceName, status);
     }
+
+    public void displayStatus() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'displayStatus'");
+    }
 }

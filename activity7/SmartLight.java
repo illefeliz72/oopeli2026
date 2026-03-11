@@ -1,23 +1,28 @@
 package activity7;
 
 public class SmartLight extends SmartDevice {
-    int brightness;
+
+    private int brightness;
 
     public SmartLight(String deviceName) {
         super(deviceName);
-        this.brightness = 0;
+        brightness = 0;
     }
+
+    public void setBrightness(int level) {
+        if (isOn) {
+            if (level >= 0 && level <= 100) {
+                brightness = level;
+            }
+        } else {
+            System.out.println("Cannot change brightness. Light is OFF.");
+        }
+    }
+
     @Override
     public void displayStatus() {
-        super.displayStatus(brightness);
-        System.out.println("Brightness: " + brightness + "%");
-    }
-    public void setBrightness(int level){
-        if (isOn) {
-            this.brightness = level;
-        } else {
-            System.out.println("action failed due to " + deviceName + " is OFF.");
-        }
-        
+        super.displayStatus();
+        System.out.println("Brightness: " + brightness);
+        System.out.println();
     }
 }
