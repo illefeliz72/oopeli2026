@@ -10,7 +10,7 @@ public class MyRectangle2D {
         this(0, 0, 1, 1);
     }
 
-    //constructor
+    // constructor
     public MyRectangle2D(double x, double y, double width, double height) {
         this.x = x;
         this.y = y;
@@ -69,10 +69,16 @@ public class MyRectangle2D {
                 y <= y + height / 2);
 
     }
-    public boolean contains(MyRectangle2D r){
-        return
+
+    public boolean contains(MyRectangle2D r) {
+        return contains(r.x - r.width / 2, r.y - r.height / 2) &&
+                contains(r.x + r.width / 2, r.y - r.height / 2) &&
+                contains(r.x - r.width / 2, r.y + r.height / 2) &&
+                contains(r.x + r.width / 2, r.y + r.height / 2);
     }
-    public boolean overlaps(MyRectangle2D r){
-        
+
+    public boolean overlaps(MyRectangle2D r) {
+        return Math.abs(this.x - r.x) < (this.width / 2 + r.width / 2) &&
+                Math.abs(this.y - r.y) < (this.height / 2 + r.height / 2);
     }
 }
