@@ -1,4 +1,4 @@
-package com.device.models;
+package practice.week10.device.src.main.models;
 
 public class Laptop extends Computer{
     
