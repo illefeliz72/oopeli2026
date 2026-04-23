@@ -16,7 +16,7 @@ public class Athlete implements Competitor, Comparable<Athlete>, Cloneable {
     }
     @Override
     public void playMatch() {
-        System.out.println(name + " is competing intensely!");
+        System.out.println(name + " is competing");
     }
     @Override
     public int compareTo(Athlete other) {
